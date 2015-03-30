@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import fileinput
 from visibility_graph import visibility_graph
 import sys
