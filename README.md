@@ -1,4 +1,4 @@
-# The Visibility Graph
+# Visibility Graph Algorithm
 
 This article: [From time series to complex networks: The visibility graph](http://www.pnas.org/content/105/13/4972.full)
 
