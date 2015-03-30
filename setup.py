@@ -6,7 +6,7 @@ def readme():
 
     
 setup(name='visibility_graph',
-      version='0.1',
+      version='0.2',
       description='From time series to graph thru visibility algorithm.',
       long_description=readme(),
       classifiers=[
@@ -16,11 +16,11 @@ setup(name='visibility_graph',
           'Intended Audience :: Science/Research',
           'Topic :: Scientific/Engineering',
       ],
-      url='http://github.com/CSB-IG/visibility',
+      url='http://github.com/CSB-IG/visibility_graph',
       author='Rodrigo Garcia',
       author_email='rgarcia@inmegen.gob.mx',
       license='GPLv3',
-      packages=['visbility_graph'],
+      packages=['visibility_graph'],
       install_requires=[ 'networkx' ],
       scripts=['bin/series2edgelist.py'],
       include_package_data=True,
