@@ -24,20 +24,42 @@ undirected graph. Nodes contain the magnitudes on their timepoints.
 
 .. __: http://networkx.github.io/
 
-    >>> from visibility_graph import visibility_graph
-    >>> series = [0.87, 0.49, 0.36, 0.83, 0.87]
-    >>> g = visibility_graph( series )
-    >>> 
-    >>> g.nodes()
-    [0, 1, 2, 3, 4]
-    >>> g.edges()
-    [(0, 1), (0, 3), (0, 4), (1, 2), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)]
-    >>> 
-    >>> g.node[1]
-    {'mag': 0.49}
+  >>> from visibility_graph import visibility_graph
+  >>> series = [0.87, 0.49, 0.36, 0.83, 0.87]
+  >>> g = visibility_graph( series )
+  >>> 
+  >>> g.nodes()
+  [0, 1, 2, 3, 4]
+  >>> g.edges()
+  [(0, 1), (0, 3), (0, 4), (1, 2), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)]
+  >>> 
+  >>> g.node[1]
+  {'mag': 0.49}
 
 
 
+Series to edgelist
+------------------
+
+A command line script is provided:
+
+  $ series2edgelist.py series.csv
+
+where **series.csv** is a file containing one time point per line. One
+can specify more than one series file:
+
+  $ series2edgelist.py series1.csv series2.csv seriesN.csv
+
+The script will also read a series from the standard input:
+
+  $ cat series.csv | series2edgelist.py
+
+Edgelist will be printed to the standard output. So it might be wise
+to:
+
+  $ cat series.csv | series2edgelist.py > series.edgelist
+
+  
 The gist
 --------
 
