@@ -20,9 +20,7 @@ Application Programming Interface
 ---------------------------------
 
 Pass series as a list, visibility_graph will return a `networkX`__
-undirected graph. Nodes contain the magnitudes on their timepoints.
-
-.. __: http://networkx.github.io/
+undirected graph. Nodes contain the magnitudes on their timepoints.::
 
  >>> from visibility_graph import visibility_graph
  >>> series = [0.87, 0.49, 0.36, 0.83, 0.87]
@@ -35,6 +33,8 @@ undirected graph. Nodes contain the magnitudes on their timepoints.
  >>> 
  >>> g.node[1]
  {'mag': 0.49}
+
+.. __: http://networkx.github.io/
 
 
 
