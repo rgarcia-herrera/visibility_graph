@@ -25,13 +25,18 @@ def visibility_graph(series):
         (ta, ya) = a
         (tb, yb) = b
 
+        connect = True
+        
         # let's see all other points in the series
         for tc, yc in tseries:
             # other points, not a or b
             if tc != ta and tc != tb:
-                # does c not obstruct?
-                if yc < yb + (ya - yb) * ( (tb - tc) / (tb - ta) ):
-                    g.add_edge(ta, tb)
+                # does c obstruct?
+                if yc > yb + (ya - yb) * ( (tb - tc) / (tb - ta) ):
+                    connect = False
+                    
+        if connect:
+            g.add_edge(ta, tb)
 
 
     return g
