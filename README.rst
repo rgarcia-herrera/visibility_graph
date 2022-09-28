@@ -31,7 +31,7 @@ undirected graph. Nodes contain the magnitudes on their timepoints.::
  >>> g.edges()
  [(0, 1), (0, 4), (1, 2), (2, 3), (3, 4)]
  >>> 
- >>> g.node[1]
+ >>> g.nodes[1]
  {'mag': 0.49}
 
 .. __: http://networkx.github.io/
