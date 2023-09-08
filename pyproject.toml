@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "networkx"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visibility_graph"
+version = "0.5"
+authors = [
+  { name="Rodrigo Garcia-Herrera", email="rgarcia@riseup.net" },
+]
+description = 'From time series to graph thru visibility algorithm.'
+readme = "README.rst"
+requires-python = ">=3.7"
+classifiers = [
+          'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+          'Programming Language :: Python :: 2.7',
+          'Topic :: Scientific/Engineering :: Information Analysis',
+          'Intended Audience :: Science/Research',
+          'Topic :: Scientific/Engineering',
+]
+
+[project.urls]
+"Homepage" = 'http://github.com/CSB-IG/visibility_graph'
