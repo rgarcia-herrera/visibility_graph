@@ -28,11 +28,11 @@ def visibility_graph(series):
         connect = True
         
         # let's see all other points in the series
-        for tc, yc in tseries[ta:tb]:
+        for tc, yc in tseries[ta+1:tb]:
             # other points, not a or b
             if tc != ta and tc != tb:
                 # does c obstruct?
-                if yc > yb + (ya - yb) * ( (tb - tc) / (tb - ta) ):
+                if yc >= yb + (ya - yb) * ( (tb - tc) / (tb - ta) ):
                     connect = False
                     
         if connect:
