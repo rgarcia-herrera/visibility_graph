@@ -11,7 +11,6 @@ setup(name='visibility_graph',
       long_description=readme(),
       classifiers=[
           'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
-          'Programming Language :: Python :: 2.7',
           'Topic :: Scientific/Engineering :: Information Analysis',
           'Intended Audience :: Science/Research',
           'Topic :: Scientific/Engineering',
