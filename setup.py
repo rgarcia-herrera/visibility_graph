@@ -6,7 +6,7 @@ def readme():
 
     
 setup(name='visibility_graph',
-      version='0.5',
+      version='0.5.1',
       description='From time series to graph thru visibility algorithm.',
       long_description=readme(),
       classifiers=[
