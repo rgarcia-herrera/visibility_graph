@@ -65,8 +65,9 @@ The gist
 
 "In this graph, every node corresponds, in the same order, to series data, and two nodes are connected if visibility exists between the corresponding data, that is to say, if there is a straight line that connects the series data, provided that this “visibility line” does not intersect any intermediate data height."
 
-.. image:: http://www.pnas.org/content/105/13/4972/F1.medium.gif
+.. image:: https://www.pnas.org/cms/10.1073/pnas.0709247105/asset/e257d3b5-ab8e-4e0f-b9ff-c46bdd3d865b/assets/graphic/zpq0080896800001.jpeg
+
 
 "More formally, we can establish the following visibility criteria: two arbitrary data values (t a, y a) and (t b, y b) will have visibility, and consequently will become two connected nodes of the associated graph, if any other data (t c, y c) placed between them fulfills:"
 
-.. image:: http://www.pnas.org/content/105/13/4972/embed/graphic-2.gif
+.. image:: https://www.pnas.org/cms/10.1073/pnas.0709247105/asset/b73d0eba-8ff8-46f0-aca5-705e29ad21d2/assets/graphic/zpq01308-9680-m01.jpeg
